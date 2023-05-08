@@ -1,5 +1,5 @@
 import { RequestHandler } from 'express';
-import Check from './check'
+import Check from './Check'
 export const tomarCheck: RequestHandler = async (req, res) =>{ 
     
     const Checks = await Check.find();
@@ -13,10 +13,10 @@ export const tomarChecks: RequestHandler = async (req, res) =>{
 };
 
 export const crearCheck: RequestHandler = async (req, res) =>{ 
-    const buscarCheck = await Check.findOne({descripcion: req.body.descripcion});
+   /* const buscarCheck = await Check.findOne({descripcion: req.body.descripcion});
     if (buscarCheck){
         return res.status(301).json({mensaje: 'Este Check ya existe'});
-    }
+    }*/
 
     const check = new Check(req.body);
     const Checkguardado = await check.save()
