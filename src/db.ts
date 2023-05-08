@@ -1,7 +1,8 @@
 import mongoose, { ConnectOptions } from "mongoose";
-const uri = 'mongodb+srv://inu:Bruno123*@cluster0.gufp8dz.mongodb.net/test';
+import config from './config';
 
 
+const uri = config.DB_URI;
 
 (async () => {
     try{
