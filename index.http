@@ -1,20 +1,18 @@
-GET http://localhost:2000/cronograma HTTP/1.1
+GET http://localhost:2000/check HTTP/1.1
 
 
 ###
 
-GET http://localhost:2000/cronograma/64550f3a160accb6fab8655b HTTP/1.1
+GET http://localhost:2000/check/6459400ea832049470808047 HTTP/1.1
 
 ###
 
-POST http://localhost:2000/cronograma/ HTTP/1.1
+POST http://localhost:2000/check/ HTTP/1.1
 Content-Type: application/json
 
 {   
-    "descripcion": "COPPA DEL REY GRAN FINAL",
-    "fechaentrega": "5/4/2023",
-    "fechainicio": "5/6/2023",
-    "fechafin": "5/7/2023"
+    "descripcion": "COPPA DEL REY gGRAN FINALs",
+    "tipo": "deporte"
 
     
 }
@@ -30,4 +28,4 @@ Content-Type: application/json
 }
 ###
 
-DELETE http://localhost:2000/cronograma/64550e01a5a7c9950bc51919 HTTP/1.1
+DELETE http://localhost:2000/check/6459400ea832049470808047 HTTP/1.1
