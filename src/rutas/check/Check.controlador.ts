@@ -20,7 +20,7 @@ export const crearCheck: RequestHandler = async (req, res) =>{
 
     const check = new Check(req.body);
     const Checkguardado = await check.save()
-    res.json(Checkguardado)
+    res.json(Checkguardado);
 };
 
 export const actulizarCheck: RequestHandler = async (req, res) =>{ 

@@ -2,7 +2,10 @@ import mongoose, { ConnectOptions } from "mongoose";
 import config from './config';
 
 
-const uri = config.DB_URI;
+
+const uri  = config.DB_URI ;
+
+
 
 (async () => {
     try{
